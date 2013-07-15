@@ -1,4 +1,6 @@
 RailsPrelaunchSignup::Application.routes.draw do
+  root :to => 'visitors#new'
+  
   authenticated :user do
     root :to => 'home#index'
   end
